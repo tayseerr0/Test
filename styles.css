@@ -74,6 +74,28 @@ input[type="submit"]:hover {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
+.bottom {
+    background-color: #dadce0;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    bottom: 0;
+}
+
+.bottom a {
+    margin: 4px 14px;
+    color: rgb(24, 24, 24);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.bottom a:active {
+    background-color: darkslategrey;
+}
+
 @media (max-width: 600px) {
     .top {
         justify-content: flex-start;
@@ -98,6 +120,51 @@ input[type="submit"]:hover {
     input[type="submit"] {
         display: block;
         margin: 10px auto;
-        width: 180px;
+        width: 80vw;
+        max-width: 180px;
     }
+}
+
+.advanced {
+    margin: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.advanced-row {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.advanced-row label {
+    width: 120px;
+    font-size: 14px;
+}
+
+.advanced-row input {
+    width: 95vw;
+    max-width: 350px;
+    padding: 15px 10px;
+    margin-bottom: 12px;
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: none;
+}
+
+.advanced-row input[type="text"]:hover {
+    box-shadow: none;
+}
+
+.advanced-button input[type="submit"] {
+    background-color: #4d90fe;
+    color: white;
+    border: 1px solid #3079ed;
+    font-weight: bold;
+}
+
+.top a.active {
+    border-bottom: 2px solid rgb(24, 24, 24);
 }
